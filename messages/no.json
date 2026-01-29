@@ -1,0 +1,222 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"navbar": {
+		"upload": "Last opp",
+		"convert": "Konverter",
+		"settings": "Innstillinger",
+		"about": "Om",
+		"toggle_theme": "Bytt tema"
+	},
+	"footer": {
+		"copyright": "© {year} VERT.",
+		"source_code": "Kildekode",
+		"discord_server": "Discord-server",
+		"privacy_policy": "Personvern"
+	},
+	"upload": {
+		"title": "Filkonvertereren du vil elske.",
+		"subtitle": "All bilde-, lyd- og dokumentbehandling skjer på enheten din. Videoer konverteres på våre lynraske servere. Ingen filstørrelsesgrense, ingen annonser, og helt åpen kildekode.",
+		"uploader": {
+			"text": "Slipp eller klikk for å {action}",
+			"convert": "konvertere"
+		},
+		"cards": {
+			"title": "VERT støtter...",
+			"images": "Bilder",
+			"audio": "Lyd",
+			"documents": "Dokumenter",
+			"video": "Video",
+			"video_server_processing": "Serverstøttet",
+			"local_supported": "Lokal støtte",
+			"status": {
+				"text": "<b>Status:</b> {status}",
+				"ready": "klar",
+				"not_ready": "ikke klar",
+				"not_initialized": "ikke initialisert",
+				"downloading": "laster ned...",
+				"initializing": "initialiserer...",
+				"unknown": "ukjent status"
+			},
+			"supported_formats": "Støttede formater:"
+		},
+		"tooltip": {
+			"partial_support": "Dette formatet kan bare konverteres som {direction}.",
+			"direction_input": "input (fra)",
+			"direction_output": "output (til)",
+			"video_server_processing": "Videoer lastes opp til en server for behandling som standard, lær hvordan du setter det opp lokalt her."
+		}
+	},
+	"convert": {
+		"panel": {
+			"convert_all": "Konverter alle",
+			"download_all": "Last ned alle som .zip",
+			"remove_all": "Fjern alle filer",
+			"set_all_to": "Sett alle til",
+			"na": "I/T"
+		},
+		"dropdown": {
+			"audio": "Lyd",
+			"video": "Video",
+			"doc": "Dokument",
+			"image": "Bilde",
+			"placeholder": "Søk format"
+		},
+		"tooltips": {
+			"unknown_file": "Ukjent filtype",
+			"audio_file": "Lydfil",
+			"video_file": "Videofil",
+			"document_file": "Dokumentfil",
+			"image_file": "Bildefil",
+			"convert_file": "Konverter denne filen",
+			"download_file": "Last ned denne filen"
+		},
+		"errors": {
+			"cant_convert": "Vi kan ikke konvertere denne filen.",
+			"vertd_server": "hva gjør du..? du skal kjøre vertd-serveren!",
+			"unsupported_format": "Kun bilde-, video-, lyd- og dokumentfiler støttes",
+			"vertd_not_found": "Kunne ikke finne vertd-instansen for å starte videokonvertering. Er du sikker på at instans-URL-en er satt riktig?",
+			"worker_downloading": "{type}-konverteren initialiseres for øyeblikket, vennligst vent noen øyeblikk.",
+			"worker_error": "{type}-konverteren fikk en feil under initialisering, prøv igjen senere.",
+			"worker_timeout": "{type}-konverteren tar lengre tid enn forventet å initialisere, vennligst vent litt til eller oppdater siden.",
+			"audio": "lyd",
+			"doc": "dokument",
+			"image": "bilde"
+		}
+	},
+	"settings": {
+		"title": "Innstillinger",
+		"errors": {
+			"save_failed": "Kunne ikke lagre innstillinger!"
+		},
+		"appearance": {
+			"title": "Utseende",
+			"brightness_theme": "Lysstyrketema",
+			"brightness_description": "Vil du ha et solfylt smell, eller en rolig ensom natt?",
+			"light": "Lyst",
+			"dark": "Mørkt",
+			"effect_settings": "Effektinnstillinger",
+			"effect_description": "Vil du ha fancy effekter, eller en mer statisk opplevelse?",
+			"enable": "Aktiver",
+			"disable": "Deaktiver"
+		},
+		"conversion": {
+			"title": "Konvertering",
+			"advanced_settings": "Avanserte innstillinger",
+			"filename_format": "Filnavnformat",
+			"filename_description": "Dette bestemmer navnet på filen ved nedlasting, <b>uten filendelsen.</b> Du kan bruke følgende maler i formatet, som vil bli erstattet med relevant informasjon: <b>%name%</b> for det opprinnelige filnavnet, <b>%extension%</b> for den opprinnelige filendelsen, og <b>%date%</b> for en dato når filen ble konvertert.",
+			"placeholder": "VERT_%name%",
+			"default_format": "Standard konverteringsformat",
+			"default_format_enable": "Aktiver",
+			"default_format_disable": "Deaktiver",
+			"default_format_description": "Dette endrer standardformatet som velges når du laster opp en fil av denne filtypen.",
+			"default_format_image": "Bilder",
+			"default_format_video": "Videoer",
+			"default_format_audio": "Lyd",
+			"default_format_document": "Dokumenter",
+			"metadata": "Filmetadata",
+			"metadata_description": "Dette endrer om metadata (EXIF, sanginfo, osv.) på den opprinnelige filen beholdes i konverterte filer.",
+			"keep": "Behold",
+			"remove": "Fjern",
+			"quality": "Konverteringskvalitet",
+			"quality_description": "Dette endrer standard utgangskvalitet for konverterte filer (i sin kategori). Høyere verdier kan føre til lengre konverteringstid og filstørrelse.",
+			"quality_video": "Dette endrer standard utgangskvalitet for konverterte videofiler. Høyere verdier kan føre til lengre konverteringstid og filstørrelse.",
+			"quality_audio": "Lyd (kbps)",
+			"quality_images": "Bilde (%)",
+			"rate": "Samplingsfrekvens (Hz)"
+		},
+		"vertd": {
+			"title": "Videokonvertering",
+			"status": "status:",
+			"loading": "laster...",
+			"available": "tilgjengelig, commit id {commitId}",
+			"unavailable": "utilgjengelig (er url-en riktig?)",
+			"description": "<code>vertd</code>-prosjektet er en server-wrapper for FFmpeg. Dette lar deg konvertere videoer gjennom VERTs webgrensesnitt, samtidig som du kan bruke kraften til GPU-en din for å gjøre det så raskt som mulig.",
+			"hosting_info": "Vi hoster en offentlig instans for din bekvemmelighet, men det er ganske enkelt å hoste din egen på PC-en eller serveren din hvis du vet hva du gjør. Du kan laste ned server-binærfiler [vertd_link]her[/vertd_link] - prosessen med å sette dette opp vil bli enklere i fremtiden, så følg med!",
+			"instance": "Instans",
+			"url_placeholder": "Eksempel: http://localhost:24153",
+			"conversion_speed": "Konverteringshastighet",
+			"speed_description": "Dette beskriver avveiningen mellom hastighet og kvalitet. Raskere hastigheter gir lavere kvalitet, men får jobben gjort raskere.",
+			"speeds": {
+				"very_slow": "Veldig treg",
+				"slower": "Tregere",
+				"slow": "Treg",
+				"medium": "Middels",
+				"fast": "Rask",
+				"ultra_fast": "Ekstremt rask"
+			}
+		},
+		"privacy": {
+			"title": "Personvern og data",
+			"plausible_title": "Plausible-analyse",
+			"plausible_description": "Vi bruker [plausible_link]Plausible[/plausible_link], et personvernfokusert analyseverktøy, for å samle helt anonyme statistikker. All data er anonymisert og aggregert, og ingen identifiserbar informasjon blir noen gang sendt eller lagret. Du kan se analysen [analytics_link]her[/analytics_link] og velge å melde deg ut nedenfor.",
+			"opt_in": "Meld inn",
+			"opt_out": "Meld ut"
+		},
+		"language": {
+			"title": "Språk",
+			"description": "Velg ønsket språk for VERT-grensesnittet."
+		}
+	},
+	"about": {
+		"title": "Om",
+		"why": {
+			"title": "Hvorfor VERT?",
+			"description": "<b>Filkonverterere har alltid skuffet oss.</b> De er stygge, fulle av annonser, og viktigst av alt; trege. Vi bestemte oss for å løse dette en gang for alle ved å lage et alternativ som løser alle disse problemene, og mer.<br/><br/>Alle ikke-video-filer konverteres helt på enheten; dette betyr at det ikke er noen forsinkelse mellom sending og mottak av filer fra en server, og vi får aldri tilgang til filene du konverterer.<br/><br/>Videofiler lastes opp til vår lynraske RTX 4000 Ada-server. Videoene dine blir liggende der i en time hvis du ikke konverterer dem. Hvis du konverterer filen, blir videoen liggende på serveren i en time, eller til den lastes ned. Filen blir deretter slettet fra serveren vår."
+		},
+		"sponsors": {
+			"title": "Sponsorer",
+			"description": "Vil du støtte oss? Kontakt en utvikler i [discord_link]Discord[/discord_link]-serveren, eller send en e-post til",
+			"email_copied": "E-post kopiert til utklippstavlen!"
+		},
+		"resources": {
+			"title": "Ressurser",
+			"discord": "Discord",
+			"source": "Kilde",
+			"email": "E-post"
+		},
+		"donate": {
+			"title": "Doner til VERT",
+			"description": "Med din støtte kan vi fortsette å vedlikeholde og forbedre VERT.",
+			"one_time": "Engangs",
+			"monthly": "Månedlig",
+			"custom": "Egendefinert",
+			"pay_now": "Betal nå",
+			"donate_amount": "Doner ${amount} USD",
+			"thank_you": "Takk for donasjonen!",
+			"payment_failed": "Betaling mislyktes: {message}{period} Du er ikke belastet.",
+			"donation_error": "En feil oppstod under behandlingen av donasjonen. Prøv igjen senere.",
+			"payment_error": "Feil ved henting av betalingsdetaljer. Prøv igjen senere."
+		},
+		"credits": {
+			"title": "Kreditering",
+			"contact_team": "Hvis du vil kontakte utviklingsteamet, bruk e-posten som finnes på \"Ressurser\"-kortet.",
+			"notable_contributors": "Merkbare bidragsytere",
+			"notable_description": "Vi vil takke disse personene for deres store bidrag til VERT.",
+			"github_contributors": "GitHub-bidragsytere",
+			"github_description": "Stor takk til alle disse for å hjelpe til! [github_link]Vil du også hjelpe?[/github_link]",
+			"no_contributors": "Ser ut som ingen har bidratt ennå... [contribute_link]bli den første til å bidra![/contribute_link]",
+			"libraries": "Biblioteker",
+			"libraries_description": "En stor takk til FFmpeg (lyd, video), ImageMagick (bilder) og Pandoc (dokumenter) for å vedlikeholde slike utmerkede biblioteker i så mange år. VERT er avhengig av dem for å gi deg konverteringene dine.",
+			"roles": {
+				"lead_developer": "Hovedutvikler; konverteringsbackend, UI-implementering",
+				"developer": "Utvikler; UI-implementering",
+				"designer": "Designer; UX, merkevarebygging, markedsføring",
+				"docker_ci": "Vedlikehold av Docker & CI-støtte",
+				"former_cofounder": "Tidligere medgründer & designer"
+			}
+		},
+		"errors": {
+			"github_contributors": "Feil ved henting av GitHub-bidragsytere"
+		}
+	},
+	"workers": {
+		"errors": {
+			"general": "Feil ved konvertering av {file}: {message}",
+			"cancel": "Feil ved avbrytelse av konvertering for {file}: {message}",
+			"magick": "Feil i Magick-arbeider, bildekovertering fungerer kanskje ikke som forventet.",
+			"ffmpeg": "Feil ved lasting av FFmpeg, noen funksjoner fungerer kanskje ikke som forventet.",
+			"no_audio": "Ingen lydstrøm funnet.",
+			"invalid_rate": "Ugyldig samplingsfrekvens angitt: {rate}Hz"
+		}
+	}
+}
